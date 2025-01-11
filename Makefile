@@ -32,8 +32,8 @@ package: install
 	@echo "Package: clic" > package/DEBIAN/control
 	@echo "Version: 1.2" >> package/DEBIAN/control
 	@echo "Architecture: all" >> package/DEBIAN/control
-	@echo "Maintainer: Your Name <your.email@example.com>" >> package/DEBIAN/control
-	@echo "Description: clic package" >> package/DEBIAN/control
+	@echo "Maintainer: enpasant" >> package/DEBIAN/control
+	@echo "Description: CLI (Command Line Interface) math utility" >> package/DEBIAN/control
 	@mkdir -p package$(BIN_DIR)
 	@cp $(SRC)/clic.py package$(BIN_DIR)/clic
 	@chmod +x package$(BIN_DIR)/clic  # Ensure it's executable
