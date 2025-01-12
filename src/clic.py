@@ -17,7 +17,7 @@ def calc():
 
         if chSt == "help":
             console.print("[bold magenta]Guide is currently being worked on.[/]")
-            console.print("[bold cyan]clic Guide v0.01[/]")
+            console.print("[bold green] Guide is available at https://github.com/enpasant/clic/ . [/]")
         elif chSt == "exit":
             console.print("[bold red] Quitting... Farewell.  [/]")
             quit()
