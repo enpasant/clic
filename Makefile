@@ -41,5 +41,5 @@ package: install
 	@mv package.deb clic_1.22.deb
 	@rm -rf package
 	@echo "clic packaged as clic_1.22.deb"
-
+	@rm -rf ./venv/
 .PHONY: run venv install clean package
