@@ -25,11 +25,13 @@ To download with any package manager based on dpkg, you can use these commands b
 
 clic is also runnable with make, and also debuggable with make. 
 
-To run clic with make, do:
+~~To run clic with make, do:
 
-> make
+~~> make~~
 
-On the clic folder.
+~~On the clic folder.~~
+* Cannot use make to run clic anymore, as it has been switched to a full command line utility.
+
 
 You can also debug clic, using make + parameters.
 
@@ -52,6 +54,21 @@ Debug make parameters are as:
 
 ## 2 - Use
 
-Using clic is straightforward. Just follow the steps and you'll be good.
+Using clic is straightforward. Here's how:
+
+### 2.1 - clic on CLI
+
+To execute clic, you need to install clic via dpkg or any supported package manager.
+
+To use clic, do:
+
+clic -e "EQUATION"
+
+A equation can be like:
+
+clic -e "20*2-10"
+
+
+
 
 
