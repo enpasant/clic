@@ -1,1 +1,1 @@
-rich
+rich sympy matplotlib asciichartpy
