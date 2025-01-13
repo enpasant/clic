@@ -30,7 +30,7 @@ package: install
 	@mkdir -p package/DEBIAN
 	@chmod 0755 package/DEBIAN
 	@echo "Package: clic" > package/DEBIAN/control
-	@echo "Version: 1.22" >> package/DEBIAN/control
+	@echo "Version: 1.23" >> package/DEBIAN/control
 	@echo "Architecture: all" >> package/DEBIAN/control
 	@echo "Maintainer: enpasant" >> package/DEBIAN/control
 	@echo "Description: CLI (Command Line Interface) math utility" >> package/DEBIAN/control
@@ -38,8 +38,8 @@ package: install
 	@cp $(SRC)/clic.py package$(BIN_DIR)/clic
 	@chmod +x package$(BIN_DIR)/clic  # Ensure it's executable
 	@dpkg-deb --build package
-	@mv package.deb clic_1.22.deb
+	@mv package.deb clic_1.23.deb
 	@rm -rf package
-	@echo "clic packaged as clic_1.22.deb"
+	@echo "clic packaged as clic_1.23.deb"
 	@rm -rf ./venv/
 .PHONY: run venv install clean package
